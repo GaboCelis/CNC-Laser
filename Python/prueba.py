@@ -1,4 +1,5 @@
 import math
+#comentario agregado
 
 def Tor_Motor(d_carga, L_theta, D_total, f_0, t_acel, t_total, M_soporte, e, Longitud, Densidad, Diametro, mu_superficie, F_externa, F_gravedad):
 	# Resolución de la posición de la carga
