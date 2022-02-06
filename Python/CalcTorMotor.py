@@ -72,9 +72,10 @@ JZ_total = (J_tornillo + J_WX) / pow(i,2)
 
 e_Y = 0.9
 Soport_Y = {'Masa': 1.562, 'J':0.006}
+Componentes_Z = {'Masa': Masa_Z, 'J':JZ_total}
 Motor_Y = {'Masa': 0.644, 'J':0.0003278}
 
-Masa_Y = Motor_Y['Masa'] + Soport_Y['Masa']
+Masa_Y = Motor_Y['Masa'] + Soport_Y['Masa'] + Componentes_Z['Masa']
 
 J_WY = (Masa_Z / e_Y) * pow((1 / (2 * math.pi * (1000 / dXY_carga))),2)
 JY_total = (J_WY) / pow(i,2)
